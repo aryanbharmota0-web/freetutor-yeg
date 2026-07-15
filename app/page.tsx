@@ -1,11 +1,20 @@
+import Image from "next/image";
+
 const parentForm = "https://docs.google.com/forms/d/e/1FAIpQLSddDDxtDnKcZRHzgFTDkF-YntJAnkoCUYZDrosCix3UTNKOeg/viewform?usp=preview";
 const tutorForm = "https://docs.google.com/forms/d/1_U4X0ofJGwWXTUO5CXNKCwNw3f2Nbjw8u83d46HGeLk/viewform";
 
 function Logo() {
   return (
     <span className="logo">
-      <span className="logo-badge">FT</span>
-      <span className="logo-name">FreeTutor<span>YEG</span></span>
+      <Image
+        className="logo-mark"
+        src="/logo-mark.png"
+        width={44}
+        height={44}
+        alt=""
+        priority
+      />
+      <span className="logo-name">FreeTutor<span>.YEG</span></span>
     </span>
   );
 }
@@ -198,4 +207,3 @@ export default function Home() {
     </main>
   );
 }
-
